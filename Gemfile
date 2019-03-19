@@ -1,0 +1,7 @@
+source 'https://rubygems.org'
+gem 'sinatra'
+gem 'rake'
+gem 'rack-thumb'
+gem 'mini_magick'
+gem 'mongo'
+gem 'rack-gridfs'

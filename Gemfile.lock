@@ -1,0 +1,39 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    bson (4.4.2)
+    mapel (0.1.6)
+    mini_magick (4.9.3)
+    mongo (2.7.1)
+      bson (>= 4.4.2, < 5.0.0)
+    mustermann (1.0.3)
+    rack (2.0.6)
+    rack-gridfs (0.3.0)
+      mongo (>= 0.20.1)
+      rack
+    rack-protection (2.0.5)
+      rack
+    rack-thumb (0.2.4)
+      mapel (>= 0.1.6)
+      rack
+    rake (12.3.2)
+    sinatra (2.0.5)
+      mustermann (~> 1.0)
+      rack (~> 2.0)
+      rack-protection (= 2.0.5)
+      tilt (~> 2.0)
+    tilt (2.0.9)
+
+PLATFORMS
+  x64-mingw32
+
+DEPENDENCIES
+  mini_magick
+  mongo
+  rack-gridfs
+  rack-thumb
+  rake
+  sinatra
+
+BUNDLED WITH
+   1.16.2
