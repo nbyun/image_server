@@ -1,5 +1,13 @@
+GIT
+  remote: https://github.com/nbyun/rack-gridfs-new.git
+  revision: bd392c150d4aa8512573f7ca9a44b8352062bef0
+  specs:
+    rack-gridfs-new (0.0.1)
+      mongo (~> 2.0)
+      rack (>= 1.0)
+
 GEM
-  remote: https://rubygems.org/
+  remote: https://gems.ruby-china.com/
   specs:
     bson (4.4.2)
     mapel (0.1.6)
@@ -8,9 +16,6 @@ GEM
       bson (>= 4.4.2, < 5.0.0)
     mustermann (1.0.3)
     rack (2.0.6)
-    rack-gridfs (0.3.0)
-      mongo (>= 0.20.1)
-      rack
     rack-protection (2.0.5)
       rack
     rack-thumb (0.2.4)
@@ -25,15 +30,15 @@ GEM
     tilt (2.0.9)
 
 PLATFORMS
-  x64-mingw32
+  ruby
 
 DEPENDENCIES
   mini_magick
   mongo
-  rack-gridfs
+  rack-gridfs-new!
   rack-thumb
   rake
   sinatra
 
 BUNDLED WITH
-   1.16.2
+   1.16.6

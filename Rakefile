@@ -1,4 +1,4 @@
-namespace :ImageService do
+namespace :image_service do
 
   desc "Start service"
   task :start do

@@ -1,15 +1,15 @@
+require 'gridfs_new'
 module ImageService
   class App < Sinatra::Application
     use Rack::Thumb
     get '/' do
       'hello world'
     end
-    use Rack::GridFS, {
+
+    use Rack::GridFSNew, {
       :prefix => 'image',
-      :db => FileMongo,
-      :expires => 30*24*3600,
-      :mapper => lambda {|path| %r{^/image/(\w+)/.*}.match(path)[1]}
-    }
+      :db => FileMongo.database
+     }
 
     not_found do
       '404'
@@ -21,6 +21,6 @@ module ImageService
 
 
   end
-
 end
+
 
