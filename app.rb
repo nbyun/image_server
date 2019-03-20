@@ -8,8 +8,9 @@ module ImageService
 
     use Rack::GridFSNew, {
       :prefix => 'image',
-      :db => FileMongo.database
-     }
+      :db => Mongoid::Clients.with_name('vote').use('vote').database,
+      :mapper => lambda { |path| %r{^/image/(\w+)/.*}.match(path)[1] }
+    }
 
     not_found do
       '404'
